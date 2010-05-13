@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'uwchat'
+
+ARGV[0] ||= Uwchat::HOST
+ARGV[1] ||= Uwchat::PORT
+ChatClient.new( ARGV[0], ARGV[1] ).chat
